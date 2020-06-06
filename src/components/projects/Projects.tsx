@@ -34,7 +34,8 @@ function Projects() {
                                 "To-do list réalisée lorsque j'ai commencé à coder en React et Typescript au début de mon stage de fin d'études",
                                 "React version 16, avec hooks"]}
                             dates="Janvier 2020"
-                            link="https://github.com/charlotteisambert/to-do"
+                            githubLink="https://github.com/charlotteisambert/to-do"
+                            projectLink="https://charlotteisambert.github.io/to-do/"
                             isSelected={selectedCardId === "toDo"}
                             handleCardClick={() => handleCardClick("toDo")}
                         />
@@ -47,7 +48,7 @@ function Projects() {
                                 "Arbre binaire de recherche implémenté en Java grâce à des design patterns",
                                 "Design patterns : Null Object, Visitor et Strategy"]}
                             dates="Novembre 2019"
-                            link="https://github.com/charlotteisambert/binary-search-tree"
+                            githubLink="https://github.com/charlotteisambert/binary-search-tree"
                             isSelected={selectedCardId === "binarySearchTree"}
                             handleCardClick={() => handleCardClick("binarySearchTree")}
                         />

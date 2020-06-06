@@ -19,7 +19,7 @@ const ProjectsStyle = makeStyles((theme: Theme) => createStyles({
     },
     wrapperCard: {
         padding: "1rem",
-        minHeight: "19rem"
+        minHeight: "22rem"
     },
 }));
 
