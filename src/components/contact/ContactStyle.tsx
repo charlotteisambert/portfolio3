@@ -9,7 +9,7 @@ const ContactStyle = makeStyles((theme: Theme) => createStyles({
     height: "100%",
   },
   wrapperTitle:{
-    height:"10%"
+    maxHeight:"10%",
   },
   title: {
     height: "fit-content",

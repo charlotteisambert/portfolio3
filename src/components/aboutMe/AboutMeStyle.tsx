@@ -9,7 +9,7 @@ const App = makeStyles((theme: Theme) => createStyles({
     height: "fit-content",
   },
   wrapperTitle:{
-    height:"10%"
+    maxHeight:"10%",
   },
   title: {
     height: "fit-content",

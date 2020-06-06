@@ -5,7 +5,7 @@ const ProjectsStyle = makeStyles((theme: Theme) => createStyles({
         background: theme.palette.primary.dark,
     },
     wrapperTitle:{
-        height:"10%"
+        maxHeight:"10%",
       },
       title: {
         height: "fit-content",

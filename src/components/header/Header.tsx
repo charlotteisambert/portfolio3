@@ -5,19 +5,19 @@ import HeaderStyle from './HeaderStyle';
 import { Typography } from '@material-ui/core';
 import { Link } from "react-router-dom";
 import MenuButton from "../../uiKit/MenuButton/MenuButton";
-import{
+import {
     home,
     aboutMe,
     projects,
     contacts,
-  } from "./../../routes"
+} from "./../../routes"
 
 function Header() {
     const classes = HeaderStyle();
     const location = useLocation();
     const [selectedItem, setSelectedItem] = useState<string>(location.pathname);
 
-    useEffect(()=>{
+    useEffect(() => {
         setSelectedItem(location.pathname);
     }, [location.pathname]);
 
