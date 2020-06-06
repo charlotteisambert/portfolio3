@@ -2,12 +2,12 @@ import React from 'react';
 import AppStyle from './AppStyle';
 import Grid from '@material-ui/core/Grid';
 import { ThemeProvider } from '@material-ui/core/styles';
-import { theme } from "../utils/palette"
-import Home from "./home/Home"
-import AboutMe from './aboutMe/AboutMe';
-import Projects from './projects/Projects';
-import Contact from './contact/Contact';
-import Header from "./header/Header"
+import { theme } from "./utils/palette"
+import Home from "./components/home/Home"
+import AboutMe from './components/aboutMe/AboutMe';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Header from "./components/header/Header"
 import {
   HashRouter,
   Switch,
