@@ -5,8 +5,8 @@ import { Typography } from '@material-ui/core';
 import { Link } from "react-router-dom";
 
 interface MenuButtonProps {
-    label: String;
-    link: String;
+    label: string;
+    link: string;
     selected: boolean;
     onItemClick: () => void;
 }
@@ -21,7 +21,7 @@ function MenuButton({
 
     return (
         <Grid className={classes.wrapperButton} onClick={onItemClick}>
-            <Link to={`/${link}`} className={classes.linkStyle}>
+            <Link to={link} className={classes.linkStyle}>
                 <Grid container item sm={12} justify="center" className={classes.wrapperLabel}>
                     <Typography variant="h5" color="textSecondary" className={selected ? classes.selectedLabel : undefined}>
                         {label}

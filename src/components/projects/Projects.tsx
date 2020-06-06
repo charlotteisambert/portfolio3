@@ -6,7 +6,6 @@ import Card from './../card/Card'
 
 function Projects() {
     const classes = ProjectsStyle();
-
     const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
 
     function handleCardClick(cardId: string) {

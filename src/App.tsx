@@ -14,9 +14,25 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import {
+  home,
+  aboutMe,
+  projects,
+  contacts,
+  root,
+} from "./routes"
 
 function App() {
   const classes = AppStyle();
+
+  function renderComponent(component: React.ReactElement) {
+    return (
+      <Grid container justify="center" className={classes.wrapperComponent}>
+        {component}
+      </Grid>
+    );
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <HashRouter basename='/'>
@@ -25,28 +41,20 @@ function App() {
             <Header />
           </Grid>
           <Switch>
-            <Route path="/home">
-              <Grid container justify="center" className={classes.wrapperComponent}>
-                <Home />
-              </Grid>
+            <Route path={home}>
+              {renderComponent(<Home />)}
             </Route>
-            <Route path="/aboutMe">
-              <Grid container justify="center" className={classes.wrapperComponent}>
-                <AboutMe />
-              </Grid>
+            <Route path={aboutMe}>
+              {renderComponent(<AboutMe />)}
             </Route>
-            <Route path="/contact">
-              <Grid container justify="center" className={classes.wrapperComponent}>
-                <Contact />
-              </Grid>
+            <Route path={contacts}>
+              {renderComponent(<Contact />)}
             </Route>
-            <Route path="/projects">
-              <Grid container justify="center" className={classes.wrapperComponent}>
-                <Projects />
-              </Grid>
+            <Route path={projects}>
+              {renderComponent(<Projects />)}
             </Route>
-            <Route path="/">
-              <Redirect to={{ pathname: "/home" }} />;
+            <Route path={root}>
+              <Redirect to={{ pathname: home }} />;
             </Route>
           </Switch>
         </div>
