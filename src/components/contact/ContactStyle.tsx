@@ -2,21 +2,21 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core";
 
 const ContactStyle = makeStyles((theme: Theme) => createStyles({
   wrapperComponent: {
-    background: theme.palette.primary.dark,
+    background: theme.palette.primary.main,
   },
   wrapperContact: {
     padding: "2rem 1rem",
     height: "100%",
   },
-  wrapperTitle:{
-    maxHeight:"10%",
+  wrapperTitle: {
+    maxHeight: "10%",
   },
   title: {
     height: "fit-content",
   },
   wrapperBody: {
     padding: "0 15rem",
-    height:"90%",
+    height: "90%",
   },
   wrapperInfos: {
     padding: "2rem 5rem",
@@ -85,12 +85,12 @@ const ContactStyle = makeStyles((theme: Theme) => createStyles({
   },
   link: {
     textDecoration: "none",
-  },
-  linkName: {
-    "&:hover": {
+    width: "100%",
+    height: "100%",
+    "&:hover :nth-child(1)": {
       color: theme.palette.secondary.main,
+    },
   },
-  }
 }));
 
 export default ContactStyle;

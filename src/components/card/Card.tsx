@@ -42,22 +42,32 @@ function Card({
 }: CardProps) {
     const classes = CardStyle();
 
-    function getDescription(icon: React.ReactElement, text: string, type: "text" | "link" | "mission", link?: string | null, bold: boolean = false) {
+    function getDescription(icon: React.ReactElement, text: string, align: "justify" | "left", bold: boolean = false) {
         return (
             <Grid container item >
                 <Grid container item sm={2}>
                     {icon}
                 </Grid>
                 <Grid container item sm={10}>
-                    {type === "link" && link
-                        ? (
-                            <a href={link} target="_blank" rel="noopener noreferrer" className={classes.link} onClick={handleClickLink}>
-                                <Typography variant="body2" color="textSecondary" className={classes.linkName}> {text} </Typography>
-                            </a>
-                        )
-                        : <Typography variant={bold ? "h6" : "body2"} color="textSecondary" align={type === "mission" ? "justify" : "left"}>{text}</Typography>
-                    }
+                    < Typography variant={bold ? "h6" : "body2"} color="textSecondary" align={align}>{text}</Typography>
                 </Grid>
+            </Grid >
+        )
+    }
+
+    function getLinkDescription(icon: React.ReactElement, text: string, link: string) {
+        return (
+            <Grid container item >
+                <a href={link} target="_blank" rel="noopener noreferrer" className={classes.link} onClick={handleClickLink}>
+                    <Grid container item >
+                        <Grid container item sm={2}>
+                            {icon}
+                        </Grid>
+                        <Grid container item sm={10}>
+                            <Typography variant="body2" color="textSecondary"> {text} </Typography>
+                        </Grid>
+                    </Grid>
+                </a>
             </Grid>
         )
     }
@@ -88,22 +98,22 @@ function Card({
             </Grid>
             {!isSelected ?
                 <Grid container item sm={12} direction="column" justify="space-between" className={classes.wrapperDescription}>
-                    {placeName && getDescription(<BusinessCenterOutlinedIcon />, placeName, "text", null, true)}
-                    {language && getDescription(<CodeIcon />, language, "text")}
-                    {description && getDescription(<SubjectIcon />, description, "text")}
-                    {dates && getDescription(<DateRangeOutlinedIcon />, dates, "text")}
-                    {projectLink && getDescription(<LanguageIcon />, "Voir le projet", "link", projectLink)}
-                    {githubLink && getDescription(<GitHubIcon />, "Voir le code", "link", githubLink)}
+                    {placeName && getDescription(<BusinessCenterOutlinedIcon className={classes.icon} />, placeName, "left", true)}
+                    {language && getDescription(<CodeIcon className={classes.icon} />, language, "left")}
+                    {description && getDescription(<SubjectIcon className={classes.icon} />, description, "left")}
+                    {dates && getDescription(<DateRangeOutlinedIcon className={classes.icon} />, dates, "left")}
+                    {projectLink && getLinkDescription(<LanguageIcon className={classes.icon} />, "Voir le projet", projectLink)}
+                    {githubLink && getLinkDescription(<GitHubIcon className={classes.icon} />, "Voir le code", githubLink)}
                     {languages && languages.map((language, index) =>
                         <Grid container item key={index}>
-                            {getDescription(<ArrowRightOutlinedIcon />, language, "text")}
+                            {getDescription(<ArrowRightOutlinedIcon color="primary" />, language, "left")}
                         </Grid>)}
                 </Grid>
                 :
                 <Grid container item className={classes.wrapperMissions} justify="space-around">
                     {missions && missions.map((mission, index) =>
                         <Grid container item key={index}>
-                            {getDescription(<ArrowRightOutlinedIcon />, mission, "mission")}
+                            {getDescription(<ArrowRightOutlinedIcon className={classes.icon} />, mission, "justify")}
                         </Grid>)}
                 </Grid>
             }

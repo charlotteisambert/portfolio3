@@ -63,11 +63,14 @@ const CardStyle = makeStyles((theme: Theme) => createStyles({
     padding: "2rem 2rem",
     height: "70%",
   },
+  icon: {
+    color: theme.palette.primary.dark,
+  },
   link: {
     textDecoration: "none",
-  },
-  linkName: {
-    "&:hover": {
+    width: "100%",
+    height: "100%",
+    "&:hover :nth-child(1)": {
       color: theme.palette.secondary.main,
     },
   },

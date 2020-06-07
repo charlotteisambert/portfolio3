@@ -4,9 +4,9 @@ import { blueGrey, pink } from '@material-ui/core/colors';
 export const theme = createMuiTheme({
     palette: {
         primary: {
-            light: blueGrey[700],
-            main: "#01425e",
-            dark: "#05314b",
+            light: "#01425e",
+            main: "#05314b",
+            dark: "#032030",
         },
         secondary: {
             light: pink[600],
@@ -15,11 +15,11 @@ export const theme = createMuiTheme({
         },
         text: {
             primary: "#EFEFEF",
-            secondary: blueGrey[900],
+            secondary: "#032030",
         },
         common: {
             white: "#EFEFEF",
-            black: "#000000",
+            black: "#05314b",
         }
     },
     typography: {

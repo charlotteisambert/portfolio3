@@ -13,15 +13,15 @@ const HeaderStyle = makeStyles((theme: Theme) => createStyles({
     borderRadius:"50px",
     padding:".1rem .5rem",
   },
+  icon:{
+    color:theme.palette.primary.dark,
+  },
   wrapperNameBar:{
     padding: ".5rem .5rem .5rem 1rem",
   },
   wrapperName:{
     textDecoration: "none",
     paddingLeft: ".5rem",
-  },
-  wrapperMenu:{
-
   },
   bar:{
     backgroundImage: `linear-gradient(to right, ${theme.palette.secondary.dark} 0%, ${theme.palette.secondary.main} 50%, ${theme.palette.secondary.light} 100%)`,

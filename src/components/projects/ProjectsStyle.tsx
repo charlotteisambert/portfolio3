@@ -2,7 +2,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core";
 
 const ProjectsStyle = makeStyles((theme: Theme) => createStyles({
     wrapperComponent: {
-        background: theme.palette.primary.dark,
+        background: theme.palette.primary.main,
     },
     wrapperTitle:{
         maxHeight:"10%",

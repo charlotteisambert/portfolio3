@@ -38,7 +38,7 @@ function Header() {
                     </Link>
                 </Grid>
             </Grid>
-            <Grid container item sm={8} alignItems="center" justify="space-around" className={classes.wrapperMenu}>
+            <Grid container item sm={8} alignItems="center" justify="space-around">
                 <MenuButton label="Home" link={home} selected={selectedItem === home} onItemClick={checkPathname} />
                 <MenuButton label="About Me" link={aboutMe} selected={selectedItem === aboutMe} onItemClick={checkPathname} />
                 <MenuButton label="Projets" link={projects} selected={selectedItem === projects} onItemClick={checkPathname} />
@@ -47,7 +47,7 @@ function Header() {
                     <a href={resume} download className={classes.linkStyle}>
                         <Grid container item alignItems="center" sm={12}>
                             <Typography variant="h5" color="textSecondary">CV</Typography>
-                            <GetAppRoundedIcon color="primary" />
+                            <GetAppRoundedIcon className={classes.icon} />
                         </Grid>
                     </a>
                 </Grid>

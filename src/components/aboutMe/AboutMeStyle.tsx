@@ -2,7 +2,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core";
 
 const App = makeStyles((theme: Theme) => createStyles({
   wrapperComponent: {
-    background: theme.palette.primary.dark,
+    background: theme.palette.primary.main,
   },
   wrapperAboutMe: {
     padding: "2rem 1rem",

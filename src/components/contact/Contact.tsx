@@ -12,22 +12,32 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 function Contact() {
     const classes = ContactStyle();
 
-    function renderInfo(icon: React.ReactElement, text: string, link?: string) {
+    function renderInfo(icon: React.ReactElement, text: string) {
         return (
             <Grid container item sm={12} justify="center" className={classes.wrapperInfoLine}>
                 <Grid container item sm={1}>
                     {icon}
                 </Grid>
                 <Grid container item sm={10} className={classes.wrapperInfoLabel}>
-                    {link
-                        ? (
-                            <a href={link} target="_blank" rel="noopener noreferrer" className={classes.link}>
-                                <Typography variant="body1" color="textPrimary" className={classes.linkName}>{text}</Typography>
-                            </a>
-                        )
-                        : <Typography variant="body1" color="textPrimary">{text}</Typography>
-                    }
+                    <Typography variant="body1" color="textPrimary">{text}</Typography>
                 </Grid>
+            </Grid>
+        );
+    }
+
+    function renderLink(icon: React.ReactElement, text: string, link: string) {
+        return (
+            <Grid container item sm={12} justify="center" className={classes.wrapperInfoLine}>
+                <a href={link} target="_blank" rel="noopener noreferrer" className={classes.link}>
+                    <Grid container item sm={12} justify="center">
+                        <Grid container item sm={1}>
+                            {icon}
+                        </Grid>
+                        <Grid container item sm={10} className={classes.wrapperInfoLabel}>
+                            <Typography variant="body1" color="textPrimary">{text}</Typography>
+                        </Grid>
+                    </Grid>
+                </a>
             </Grid>
         );
     }
@@ -49,8 +59,8 @@ function Contact() {
                         {renderInfo(<PhoneAndroidOutlinedIcon className={classes.icon} />, "+33 6 67 35 47 34")}
                         {renderInfo(<AlternateEmailOutlinedIcon className={classes.icon} />, "charlotte.isambert@gmail.com")}
                         {renderInfo(<LocationOnIcon className={classes.icon} />, "14 rue Olier, 75015 Paris")}
-                        {renderInfo(<LinkedInIcon className={classes.icon} />, "LinkedIn", "https://www.linkedin.com/in/charlotte-isambert-9b7886151/")}
-                        {renderInfo(<PhoneAndroidOutlinedIcon className={classes.icon} />, "Github", "https://github.com/charlotteisambert")}
+                        {renderLink(<LinkedInIcon className={classes.icon} />, "LinkedIn", "https://www.linkedin.com/in/charlotte-isambert-9b7886151/")}
+                        {renderLink(<GitHubIcon className={classes.icon} />, "Github", "https://github.com/charlotteisambert")}
                     </Grid>
                 </Grid>
             </Grid>
