@@ -5,12 +5,14 @@ import HeaderStyle from './HeaderStyle';
 import { Typography } from '@material-ui/core';
 import { Link } from "react-router-dom";
 import MenuButton from "../../uiKit/MenuButton/MenuButton";
+import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 import {
     home,
     aboutMe,
     projects,
     contacts,
 } from "./../../routes"
+import resume from "./CV_Charlotte_Isambert.pdf"
 
 function Header() {
     const classes = HeaderStyle();
@@ -41,6 +43,14 @@ function Header() {
                 <MenuButton label="About Me" link={aboutMe} selected={selectedItem === aboutMe} onItemClick={checkPathname} />
                 <MenuButton label="Projets" link={projects} selected={selectedItem === projects} onItemClick={checkPathname} />
                 <MenuButton label="Contacts" link={contacts} selected={selectedItem === contacts} onItemClick={checkPathname} />
+                <Grid container item sm={1}>
+                    <a href={resume} download className={classes.linkStyle}>
+                        <Grid container item alignItems="center" sm={12}>
+                            <Typography variant="h5" color="textSecondary">CV</Typography>
+                            <GetAppRoundedIcon color="primary" />
+                        </Grid>
+                    </a>
+                </Grid>
             </Grid>
         </Grid>
     );

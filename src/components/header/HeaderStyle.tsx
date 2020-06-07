@@ -9,6 +9,9 @@ const HeaderStyle = makeStyles((theme: Theme) => createStyles({
   },
   linkStyle: {
     textDecoration: "none",
+    border:`1px solid ${theme.palette.primary.dark}`,
+    borderRadius:"50px",
+    padding:".1rem .5rem",
   },
   wrapperNameBar:{
     padding: ".5rem .5rem .5rem 1rem",

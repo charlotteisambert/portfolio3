@@ -25,8 +25,6 @@ const ContactStyle = makeStyles((theme: Theme) => createStyles({
   wrapperInfoLine: {
     paddingTop: "1rem"
   },
-  wrapperIcon: {
-  },
   wrapperInfoLabel: {
     maxWidth: "15rem"
   },

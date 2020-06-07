@@ -15,7 +15,7 @@ function Contact() {
     function renderInfo(icon: React.ReactElement, text: string, link?: string) {
         return (
             <Grid container item sm={12} justify="center" className={classes.wrapperInfoLine}>
-                <Grid container item sm={1} className={classes.wrapperIcon}>
+                <Grid container item sm={1}>
                     {icon}
                 </Grid>
                 <Grid container item sm={10} className={classes.wrapperInfoLabel}>
