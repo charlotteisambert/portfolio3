@@ -23,10 +23,10 @@ const ContactStyle = makeStyles((theme: Theme) => createStyles({
     position: "relative",
   },
   wrapperInfoLine: {
-    paddingTop: "1rem"
+    paddingTop: "1rem",
   },
   wrapperInfoLabel: {
-    maxWidth: "15rem"
+    maxWidth: "15rem",
   },
   icon: {
     color: theme.palette.common.white,
