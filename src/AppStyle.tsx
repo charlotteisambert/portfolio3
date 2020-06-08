@@ -1,16 +1,19 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, createStyles, Theme } from "@material-ui/core";
 
-const App = makeStyles(() => ({
+const App = makeStyles((theme: Theme) => createStyles({
   wrapperApp: {
-    height: "100vh",
+    height:"100vh",
   },
   wrapperHeader: {
-    height: "10%",
+    height:"10%",
   },
   wrapperComponent: {
-    height: "90%",
-    overflow: "auto",
+    height:"90%",
+    overflow:"auto",
   },
 }));
 
 export default App;
+
+
+

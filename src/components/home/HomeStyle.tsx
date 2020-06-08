@@ -8,8 +8,8 @@ const HomeStyle = makeStyles((theme: Theme) => createStyles({
     padding: "2rem 1rem",
     height: "100%",
   },
-  wrapperTitle: {
-    maxHeight: "10%",
+  wrapperTitle:{
+    maxHeight:"10%",
   },
   title: {
     height: "fit-content",
@@ -20,8 +20,8 @@ const HomeStyle = makeStyles((theme: Theme) => createStyles({
   wrapperDescription: {
     height: "40%",
   },
-  description: {
-    maxHeight: "10rem",
+  description:{
+    maxHeight:"10rem",
   },
   wrapperInfos: {
     borderLeft: `2px solid ${theme.palette.secondary.dark}`,
