@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Typography, Link } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import ContactStyle from './ContactStyle';
 import Title from './../../uiKit/Title/Title';
 import AlternateEmailOutlinedIcon from '@material-ui/icons/AlternateEmailOutlined';
