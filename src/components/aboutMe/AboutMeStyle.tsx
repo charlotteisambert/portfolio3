@@ -8,8 +8,8 @@ const App = makeStyles((theme: Theme) => createStyles({
     padding: "2rem 1rem",
     height: "fit-content",
   },
-  wrapperTitle:{
-    maxHeight:"10%",
+  wrapperTitle: {
+    maxHeight: "10%",
   },
   title: {
     height: "fit-content",
@@ -19,12 +19,12 @@ const App = makeStyles((theme: Theme) => createStyles({
   },
   bar: {
     padding: "0 1rem",
-    borderLeft: `4px solid ${theme.palette.secondary.dark}`
+    borderLeft: `4px solid ${theme.palette.secondary.dark}`,
   },
-  wrapperCard:{
-     padding:"1rem",
-     minHeight:"22rem"
-  }
+  wrapperCard: {
+    padding: "1rem",
+    minHeight: "22rem",
+  },
 }));
 
 export default App;

@@ -1,26 +1,26 @@
-import React from 'react';
-import AppStyle from './AppStyle';
-import Grid from '@material-ui/core/Grid';
-import { ThemeProvider } from '@material-ui/core/styles';
-import { theme } from "./utils/palette"
-import Home from "./components/home/Home"
-import AboutMe from './components/aboutMe/AboutMe';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
-import Header from "./components/header/Header"
+import React from "react";
+import Grid from "@material-ui/core/Grid";
+import { ThemeProvider } from "@material-ui/core/styles";
 import {
   HashRouter,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
+import AppStyle from "./AppStyle";
+import { theme } from "./utils/palette";
+import Home from "./components/home/Home";
+import AboutMe from "./components/aboutMe/AboutMe";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Header from "./components/header/Header";
 import {
   home,
   aboutMe,
   projects,
   contacts,
   root,
-} from "./routes"
+} from "./routes";
 
 function App() {
   const classes = AppStyle();
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <HashRouter basename='/'>
+      <HashRouter basename="/">
         <div className={classes.wrapperApp}>
           <Grid container justify="center" className={classes.wrapperHeader}>
             <Header />
@@ -54,7 +54,8 @@ function App() {
               {renderComponent(<Projects />)}
             </Route>
             <Route path={root}>
-              <Redirect to={{ pathname: home }} />;
+              <Redirect to={{ pathname: home }} />
+              ;
             </Route>
           </Switch>
         </div>

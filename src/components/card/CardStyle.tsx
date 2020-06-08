@@ -27,7 +27,7 @@ const CardStyle = makeStyles((theme: Theme) => createStyles({
     transform: "scale(1.05)",
   },
   wrapperJobTitle: {
-    paddingTop: "1rem"
+    paddingTop: "1rem",
   },
   wrapperCompanyName: {
   },
@@ -53,7 +53,7 @@ const CardStyle = makeStyles((theme: Theme) => createStyles({
     textTransform: "uppercase",
   },
   selectedTitle: {
-    textTransform: "uppercase"
+    textTransform: "uppercase",
   },
   wrapperDescription: {
     padding: "2rem 3rem",
