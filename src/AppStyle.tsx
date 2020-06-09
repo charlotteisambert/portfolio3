@@ -10,6 +10,10 @@ const App = makeStyles((theme: Theme) => createStyles({
   wrapperComponent: {
     height:"90%",
     overflow:"auto",
+    background: theme.palette.primary.main,
+  },
+  wrapperFooter: {
+    padding:"1rem 2rem"
   },
 }));
 

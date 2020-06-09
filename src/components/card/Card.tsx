@@ -9,6 +9,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import CodeIcon from '@material-ui/icons/Code';
 import SubjectIcon from '@material-ui/icons/Subject';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { useTranslation } from 'react-i18next';
 
 interface CardProps {
     title: string;
@@ -41,6 +42,7 @@ function Card({
     projectLink,
 }: CardProps) {
     const classes = CardStyle();
+    const { t } = useTranslation();
 
     function getDescription(icon: React.ReactElement, text: string, align: "justify" | "left", bold: boolean = false) {
         return (
@@ -102,8 +104,8 @@ function Card({
                     {language && getDescription(<CodeIcon className={classes.icon} />, language, "left")}
                     {description && getDescription(<SubjectIcon className={classes.icon} />, description, "left")}
                     {dates && getDescription(<DateRangeOutlinedIcon className={classes.icon} />, dates, "left")}
-                    {projectLink && getLinkDescription(<LanguageIcon className={classes.icon} />, "Voir le projet", projectLink)}
-                    {githubLink && getLinkDescription(<GitHubIcon className={classes.icon} />, "Voir le code", githubLink)}
+                    {projectLink && getLinkDescription(<LanguageIcon className={classes.icon} />, t("projects.see-project"), projectLink)}
+                    {githubLink && getLinkDescription(<GitHubIcon className={classes.icon} />, t("projects.see-code"), githubLink)}
                     {languages && languages.map((language, index) =>
                         <Grid container item key={index}>
                             {getDescription(<ArrowRightOutlinedIcon color="primary" />, language, "left")}

@@ -1,0 +1,100 @@
+{
+    "home": {
+        "title": "Home",
+        "name": "Charlotte Isambert, 22 ans",
+        "job": "Ingénieur",
+        "place": "Paris",
+        "text1": "Hello !",
+        "text2": "Je suis étudiante en dernière année d'école d'ingénieur à l’ISEP et développeuse front-end en stage de fin d'études.",
+        "text3": " Au cours de mes études et de mes stages, produire un code performant, propre et facile à lire est devenu un de mes principaux objectifs.",
+        "text4": "J’ai aussi réalisé combien j’aimais travailler au sein d’une équipe.",
+        "text5": "Je suis à la recherche d'un CDI, donc si vous pensez que nos valeurs match n'hésitez pas à me ",
+        "text6": "contacter"
+    },
+    "about-me": {
+        "title": "About Me",
+        "professionnal-experiences": "Expériences professionnelles",
+        "education": "Formations et diplômes",
+        "skills": "Compétences",
+        "amuse": {
+            "title": "Stagiaire en développement front-end",
+            "place-name": "Amuse",
+            "description": "Start-up de production de dessins-animés",
+            "dates": "2020 (6 mois)",
+            "mission1": "Réalisation d’une application web React au sein d’une équipe Agile",
+            "mission2": "Contribution à l’architecture système, aux revues de code et à la qualité du produit",
+            "mission3": "Stack technique : React, TypeScript, Material UI, GraphQL"
+        },
+        "thales": {
+            "title": "Stagiaire en développement JavaScript",
+            "place-name": "Thales",
+            "description": "Grand groupe industriel",
+            "dates": "2018 (6 mois)",
+            "mission1": "Mise en place d'un environnement de tests automatisés d'une application Angular",
+            "mission2": "Méthode Agile appliquée à un grand projet logiciel",
+            "mission3": "Stack technique : JavaScript, Angular"
+        },
+        "isep": {
+            "title": "Ecole d'ingénieur du numérique",
+            "place-name": "ISEP",
+            "description": "Spécialité Architecture des Systèmes d'Information",
+            "dates": "2017 - 2020"
+        },
+        "san-diego": {
+            "title": "Semestre académique aux Etats-Unis",
+            "place-name": "San Diego State University",
+            "description": "Conception objet avancée et Design Patterns",
+            "dates": "2019"
+        },
+        "preparatory-classes": {
+            "title": "Classes préparatoires scientifiques",
+            "place-name": "ISEP",
+            "description": "MPSI - PSI",
+            "dates": "2015 - 2017"
+        },
+        "languages": {
+            "languages": "langages",
+            "databases": "Web et bases de données",
+            "java": "Java",
+            "object-oriented": "Conception Object",
+            "design-patterns": "Design Patterns",
+            "python": "Python",
+            "react": "React",
+            "javascript": "JavaScript & Typescript",
+            "html": "HTML CSS (Material UI) PHP ",
+            "sql": "SQL NoSql GraphQL"
+        }
+    },
+    "projects": {
+        "title": "Projets",
+        "subtitle": "Mes projets",
+        "to-do": {
+            "title": "To-do list",
+            "languages": "React & TypeScript",
+            "dates": "Janvier 2020",
+            "mission1": "To-do list réalisée lorsque j'ai commencé à coder en React et Typescript au début de mon stage de fin d'études",
+            "mission2": "JavaScript moderne (ES6+), React version 16, avec hooks"
+        },
+        "binary-search-tree": {
+            "title": "Arbre de recherche binaire",
+            "languages": "Java",
+            "dates": "Novembre 2019",
+            "mission1": "Arbre binaire de recherche implémenté en Java grâce à des design patterns",
+            "mission2": "Design patterns : Null Object, Visitor et Strategy"
+        },
+        "see-project": "Voir le projet",
+        "see-code": "Voir le code"
+    },
+    "contacts": {
+        "title": "Contacts",
+        "subtitle": "Entrons en contact !",
+        "phone": "+33 6 67 35 47 34",
+        "mail": "charlotte.isambert@gmail.com",
+        "address": "14 rue Olier, 75015 Paris",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+    },
+    "header": {
+        "name": "Charlotte Isambert"
+    }
+}

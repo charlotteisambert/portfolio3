@@ -8,9 +8,11 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneAndroidOutlinedIcon from '@material-ui/icons/PhoneAndroidOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
     const classes = ContactStyle();
+    const { t } = useTranslation();
 
     function renderInfo(icon: React.ReactElement, text: string) {
         return (
@@ -47,7 +49,7 @@ function Contact() {
             <Grid container className={classes.wrapperContact}>
                 <Grid container item sm={12} className={classes.wrapperTitle}>
                     <Grid container item sm={3} className={classes.title}>
-                        <Title label="Entrons en contact" />
+                        <Title label={t("contacts.subtitle")} />
                     </Grid>
                 </Grid>
                 <Grid container item sm={12} alignItems="center" justify="center" className={classes.wrapperBody}>
@@ -56,11 +58,11 @@ function Contact() {
                         <div className={classes.barRight} />
                         <div className={classes.barBottom} />
                         <div className={classes.barLeft} />
-                        {renderInfo(<PhoneAndroidOutlinedIcon className={classes.icon} />, "+33 6 67 35 47 34")}
-                        {renderInfo(<AlternateEmailOutlinedIcon className={classes.icon} />, "charlotte.isambert@gmail.com")}
-                        {renderInfo(<LocationOnIcon className={classes.icon} />, "14 rue Olier, 75015 Paris")}
-                        {renderLink(<LinkedInIcon className={classes.icon} />, "LinkedIn", "https://www.linkedin.com/in/charlotte-isambert-9b7886151/")}
-                        {renderLink(<GitHubIcon className={classes.icon} />, "Github", "https://github.com/charlotteisambert")}
+                        {renderInfo(<PhoneAndroidOutlinedIcon className={classes.icon} />, t("contacts.phone"))}
+                        {renderInfo(<AlternateEmailOutlinedIcon className={classes.icon} />, t("contacts.mail"))}
+                        {renderInfo(<LocationOnIcon className={classes.icon} />, t("contacts.address"))}
+                        {renderLink(<LinkedInIcon className={classes.icon} />, t("contacts.linkedin"), "https://www.linkedin.com/in/charlotte-isambert-9b7886151/")}
+                        {renderLink(<GitHubIcon className={classes.icon} />, t("contacts.github"), "https://github.com/charlotteisambert")}
                     </Grid>
                 </Grid>
             </Grid>

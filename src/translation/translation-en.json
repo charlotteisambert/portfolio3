@@ -1,0 +1,100 @@
+{
+    "home": {
+        "title": "Home",
+        "name": "Charlotte Isambert, 22 years old",
+        "job": "Engineer",
+        "place": "Paris",
+        "text1": "Hi !",
+        "text2": "I am currently completing my last year of Engineering School at ISEP and my end-of-study internship as a React front-end developer.",
+        "text3": "During my studies and internships, writing performant, beautiful and easy-to-read code became my very first goal.",
+        "text4": "I also realised how much I loved working as part of a team.",
+        "text5": "I am searching for a full-time engineer job, so if you think that we could be a great match don't hesitate to ",
+        "text6": "contact me"
+    },
+    "about-me": {
+        "title": "About Me",
+        "professionnal-experiences": "Work experience",
+        "education": "Education and diplomas",
+        "skills": "skills",
+        "amuse": {
+            "title": "Front-end React development intern",
+            "place-name": "Amuse",
+            "description": "Cartoons production start-up",
+            "dates": "2020 (6 months)",
+            "mission1": "React developer on a React application within an Agile Team ",
+            "mission2": "Contribution to code reviews and to the quality of the product ",
+            "mission3": "Technical stack: React, TypeScript, Material UI, GraphQL"
+        },
+        "thales": {
+            "title": "JavaScript development intern",
+            "place-name": "Thales",
+            "description": "Big electronic group",
+            "dates": "2018 (6 months)",
+            "mission1": "Automated test environment development for an Angular web application",
+            "mission2": "Agile method applied to a big software project",
+            "mission3": "Technical stack: JavaScript, Angular"
+        },
+        "isep": {
+            "title": "Engineering school",
+            "place-name": "ISEP",
+            "description": "Specialized in Information Systems ",
+            "dates": "2017 - 2020"
+        },
+        "san-diego": {
+            "title": "Abroad semester in the United States",
+            "place-name": "San Diego State University",
+            "description": "Advanced object-oriented languages and Design Patterns",
+            "dates": "2019"
+        },
+        "preparatory-classes": {
+            "title": "Preparatory classes for French Grandes Ecoles",
+            "place-name": "ISEP",
+            "description": "MPSI - PSI",
+            "dates": "2015 - 2017"
+        },
+        "languages": {
+            "languages": "IT",
+            "databases": "Web and databases",
+            "java": "Java",
+            "object-oriented": "Object-oriented languages",
+            "design-patterns": "Design Patterns",
+            "python": "Python",
+            "react": "React",
+            "javascript": "JavaScript & Typescript",
+            "html": "HTML CSS (Material UI) PHP ",
+            "sql": "SQL NoSql GraphQL"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "My projects",
+        "to-do": {
+            "title": "To-do list",
+            "languages": "React & TypeScript",
+            "dates": "January 2020",
+            "mission1": "To-do list implemented when I first coded in React and TypeScript, at the beginning of my end-of-study internship",
+            "mission2": "Modern JavaScript (ES6+) and React version 16, with hooks"
+        },
+        "binary-search-tree": {
+            "title": "Binary search tree",
+            "languages": "Java",
+            "dates": "November 2019",
+            "mission1": "Binary Search Tree for strings implemented in Java thanks to three design patterns",
+            "mission2": "Design patterns : Null Object, Visitor and Strategy"
+        },
+        "see-project": "Check out the projet",
+        "see-code": "Check out the code"
+    },
+    "contacts": {
+        "title": "Contacts",
+        "subtitle": "Let's meet !",
+        "phone": "+33 6 67 35 47 34",
+        "mail": "charlotte.isambert@gmail.com",
+        "address": "14 rue Olier, 75015 Paris",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+    },
+    "header": {
+        "name": "Charlotte Isambert"
+    }
+}

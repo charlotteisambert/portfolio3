@@ -4,8 +4,10 @@ import AboutMeStyle from './AboutMeStyle';
 import { Typography } from '@material-ui/core';
 import Title from './../../uiKit/Title/Title';
 import Card from './../card/Card';
+import { useTranslation } from 'react-i18next';
 
 function AboutMe() {
+    const { t } = useTranslation();
     const classes = AboutMeStyle();
     const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
 
@@ -22,25 +24,25 @@ function AboutMe() {
             <Grid container className={classes.wrapperAboutMe}>
                 <Grid container item sm={12} className={classes.wrapperTitle}>
                     <Grid container item sm={2} className={classes.title}>
-                        <Title label="About me" />
+                        <Title label={t("about-me.title")} />
                     </Grid>
                 </Grid>
                 <Grid container item sm={12} className={classes.wrapperArticle}>
                     <Grid container item sm={12}>
-                        <Typography variant="h5" color="textPrimary">Expériences professionnelles</Typography>
+                        <Typography variant="h5" color="textPrimary">{t("about-me.professionnal-experiences")}</Typography>
                     </Grid>
                     <Grid container item sm={12} justify="space-evenly">
                         <Grid container item sm={4} className={classes.wrapperCard}>
                             <Card
-                                title="Stagiaire en développement front-end"
-                                placeName="Amuse"
-                                description="Start-up de production de dessins-anîmés"
+                                title={t("about-me.amuse.title")}
+                                placeName={t("about-me.amuse.place-name")}
+                                description={t("about-me.amuse.description")}
                                 missions={[
-                                    "Réalisation d’une application web React au sein d’une équipe Agile",
-                                    "Contribution à l’architecture système, aux revues de code et à la qualité du produit",
-                                    "Stack technique : React, TypeScript, Material UI, GraphQL",
+                                    t("about-me.amuse.mission1"),
+                                    t("about-me.amuse.mission2"),
+                                    t("about-me.amuse.mission3"),
                                 ]}
-                                dates="2020 (6mois)"
+                                dates={t("about-me.amuse.dates")}
                                 isSelected={selectedCardId === "amuse"}
                                 handleCardClick={() => handleCardClick("amuse")}
                                 readOnly={false}
@@ -48,15 +50,15 @@ function AboutMe() {
                         </Grid>
                         <Grid container item sm={4} className={classes.wrapperCard}>
                             <Card
-                                title="Stagiaire en développement Javascript"
-                                placeName="Thales"
-                                description="Grand group industriel"
+                                title={t("about-me.thales.title")}
+                                placeName={t("about-me.thales.place-name")}
+                                description={t("about-me.thales.description")}
                                 missions={[
-                                    "Mise en place d'un environnement de tests automatisés d'une application Angular",
-                                    "Méthode Agile appliquée à un grand projet logiciel",
-                                    "Stack technique : JavaScript",
+                                    t("about-me.thales.mission1"),
+                                    t("about-me.thales.mission2"),
+                                    t("about-me.thales.mission3"),
                                 ]}
-                                dates="2018 (6mois)"
+                                dates={t("about-me.thales.dates")}
                                 isSelected={selectedCardId === "thales"}
                                 handleCardClick={() => handleCardClick("thales")}
                                 readOnly={false}
@@ -68,32 +70,32 @@ function AboutMe() {
 
                 <Grid container item sm={12} className={classes.wrapperArticle}>
                     <Grid container item sm={12} >
-                        <Typography variant="h5" color="textPrimary">Formations et diplômes</Typography>
+                        <Typography variant="h5" color="textPrimary">{t("about-me.education")}</Typography>
                         <Grid container item sm={12} justify="space-evenly">
                             <Grid container item sm={4} className={classes.wrapperCard}>
                                 <Card
-                                    title="Ecole d'ingénieur du numérique"
-                                    placeName="ISEP"
-                                    description="Spécialité Architecture des Systèmes d'Information"
-                                    dates="2017 - 2020"
+                                    title={t("about-me.isep.title")}
+                                    placeName={t("about-me.isep.place-name")}
+                                    description={t("about-me.isep.description")}
+                                    dates={t("about-me.isep.dates")}
                                     readOnly={true}
                                 />
                             </Grid>
                             <Grid container item sm={4} className={classes.wrapperCard}>
                                 <Card
-                                    title="Semestre académique aux Etats-Unis"
-                                    placeName="San Diego State University"
-                                    description="Conception objet avancée et Design Patterns"
-                                    dates="2019"
+                                    title={t("about-me.san-diego.title")}
+                                    placeName={t("about-me.san-diego.place-name")}
+                                    description={t("about-me.san-diego.description")}
+                                    dates={t("about-me.san-diego.dates")}
                                     readOnly={true}
                                 />
                             </Grid>
                             <Grid container item sm={4} className={classes.wrapperCard}>
                                 <Card
-                                    title="Classes préparatoires scientifiques"
-                                    placeName="ISEP"
-                                    description=" MPSI-PSI"
-                                    dates="2015 - 2017"
+                                    title={t("about-me.preparatory-classes.title")}
+                                    placeName={t("about-me.preparatory-classes.place-name")}
+                                    description={t("about-me.preparatory-classes.description")}
+                                    dates={t("about-me.preparatory-classes.dates")}
                                     readOnly={true}
                                 />
                             </Grid>
@@ -103,29 +105,29 @@ function AboutMe() {
                 </Grid>
                 <Grid container item sm={12} className={classes.wrapperArticle}>
                     <Grid container item sm={12} >
-                        <Typography variant="h5" color="textPrimary">Compétences</Typography>
+                        <Typography variant="h5" color="textPrimary">{t("about-me.skills")}</Typography>
                     </Grid>
                     <Grid container item sm={12} justify="space-evenly">
                         <Grid container item sm={4} className={classes.wrapperCard}>
                             <Card
-                                title="Langages"
+                                title={t("about-me.languages.languages")}
                                 languages={[
-                                    "Java",
-                                    "Conception Object",
-                                    "Design Patterns",
-                                    "Python"
+                                    t("about-me.languages.java"),
+                                    t("about-me.languages.object-oriented"),
+                                    t("about-me.languages.design-patterns"),
+                                    t("about-me.languages.python")
                                 ]}
                                 readOnly={true}
                             />
                         </Grid>
                         <Grid container item sm={4} className={classes.wrapperCard}>
                             <Card
-                                title="Web et bases de données"
+                                title={t("about-me.languages.databases")}
                                 languages={[
-                                    "React",
-                                    "JavaScript & Typescript",
-                                    "HTML CSS (Material UI) PHP ",
-                                    "SQL NoSql GraphQL"
+                                    t("about-me.languages.react"),
+                                    t("about-me.languages.javascript"),
+                                    t("about-me.languages.html"),
+                                    t("about-me.languages.sql")
                                 ]}
                                 readOnly={true}
                             />
