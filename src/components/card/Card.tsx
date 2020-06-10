@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 import BusinessCenterOutlinedIcon from '@material-ui/icons/BusinessCenterOutlined';
 import DateRangeOutlinedIcon from '@material-ui/icons/DateRangeOutlined';
 import ArrowRightOutlinedIcon from '@material-ui/icons/ArrowRightOutlined';
-import LanguageIcon from '@material-ui/icons/Language';
+import WebIcon from '@material-ui/icons/Web';
 import CodeIcon from '@material-ui/icons/Code';
 import SubjectIcon from '@material-ui/icons/Subject';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -104,7 +104,7 @@ function Card({
                     {language && getDescription(<CodeIcon className={classes.icon} />, language, "left")}
                     {description && getDescription(<SubjectIcon className={classes.icon} />, description, "left")}
                     {dates && getDescription(<DateRangeOutlinedIcon className={classes.icon} />, dates, "left")}
-                    {projectLink && getLinkDescription(<LanguageIcon className={classes.icon} />, t("projects.see-project"), projectLink)}
+                    {projectLink && getLinkDescription(<WebIcon className={classes.icon} />, t("projects.see-project"), projectLink)}
                     {githubLink && getLinkDescription(<GitHubIcon className={classes.icon} />, t("projects.see-code"), githubLink)}
                     {languages && languages.map((language, index) =>
                         <Grid container item key={index}>
